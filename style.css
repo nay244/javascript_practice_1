@@ -1,0 +1,161 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+.budget {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 530px;
+    color: #ec2F4B;
+    font-size: 22px;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+    text-transform: uppercase;
+}
+/* remove the blue border when object is focused 
+*/
+.budget:focus { outline: none; }
+
+#default-img { top: 240px; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-image: linear-gradient(to right, #009fff, #ec2f4b), url(background.png);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Courgette', cursive;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+.wrapper {
+    background-image: url(background.png);
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.decider-panel {
+    width: 100%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+}
+
+
+
+/**********************************************
+*** PLAYERS
+**********************************************/
+
+.main-text {
+    color: #ec2F4B;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.restaurant-chosen {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    color: #009FFF;
+    margin-bottom: 200px;
+}
+
+.restaurant-current-box {
+    background-color: #ec2F4B;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+
+.current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.current-link {
+    font-size: 18px;
+}
+
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover { font-weight: 600; }
+button:hover i { margin-right: 20px; }
+
+button:focus {
+    outline: none;
+}
+
+i {
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+.btn-reset { 
+    top: 40px;
+    color: #009FFF;
+}
+.btn-pick { 
+    top: 365px;
+    color: #009FFF;
+}
+
+.thinking {
+    position: absolute;
+    left: 50%;
+    top: 190px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
